@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_4f4a68de6cef4abe87dd592d0744b1f6 }}/bootcoin-microservice:${{ github.sha }}
-        file: ./Dockerfile
+        file: /.github/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
