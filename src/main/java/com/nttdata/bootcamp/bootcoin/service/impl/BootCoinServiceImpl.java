@@ -2,7 +2,6 @@ package com.nttdata.bootcamp.bootcoin.service.impl;
 
 import com.nttdata.bootcamp.bootcoin.entity.BootCoin;
 import com.nttdata.bootcamp.bootcoin.repository.BootCoinRepository;
-import com.nttdata.bootcamp.bootcoin.service.KafkaService;
 import com.nttdata.bootcamp.bootcoin.service.BootCoinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,9 +14,6 @@ public class BootCoinServiceImpl implements BootCoinService {
 
     @Autowired
     private BootCoinRepository bootCoinRepository;
-
-    @Autowired
-    private KafkaService kafkaService;
 
     @Override
     public Flux<BootCoin> findAllBootCoin() {

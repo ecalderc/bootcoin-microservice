@@ -13,7 +13,7 @@ import com.nttdata.bootcamp.bootcoin.entity.dto.VirtualCoinDto;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping(value = "/virtual-coin")
+@RequestMapping(value = "/bootcoin")
 public class BootCoinController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(BootCoinController.class);
