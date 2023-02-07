@@ -46,13 +46,13 @@ public class BootCoinController {
 			t.setDni(virtualCoinDto.getDni());
 			t.setEmail(virtualCoinDto.getEmail());
 			t.setCellNumber(virtualCoinDto.getCellNumber());
-			t.setNumberAccount("");
+			//t.setNumberAccount("");
 			t.setMount(0.00);
-			t.setFlagDebitCard(false);
-			t.setNumberDebitCard("");
-			t.setTypeOperation("REGISTER");
-			t.setCreationDate(new Date());
-			t.setModificationDate(new Date());
+			//t.setFlagDebitCard(false);
+			//t.setNumberDebitCard("");
+			//t.setTypeOperation("REGISTER");
+			//t.setCreationDate(new Date());
+			//t.setModificationDate(new Date());
 		}).onErrorReturn(bootCoin).onErrorResume(e -> Mono.just(bootCoin))
 				.onErrorMap(f -> new InterruptedException(f.getMessage())).subscribe(x -> LOGGER.info(x.toString()));
 

@@ -2,7 +2,7 @@ spring:
   application:
     name: bootcoin
   profiles:
-    active: dev
+    active: prod
   cloud:
     config:
       enabled: true
